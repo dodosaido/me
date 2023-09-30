@@ -26,7 +26,7 @@ body {
 	min-height: 100%;
 	margin-inline: auto;
 	
-	padding-top: 4rem;
+	padding-block: 4rem;
 }
 
 .session1 {
@@ -74,7 +74,7 @@ body {
 
 @media (max-width: 26.563em) {
 	.container {
-		padding-top: 2rem;
+		padding-block: 2rem;
 	}
 }
 
