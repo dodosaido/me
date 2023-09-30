@@ -36,7 +36,7 @@ body {
 .session1 > a {
 	align-self: flex-end;
 	color: inherit;
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	font-weight: 900;
 	text-decoration: none;
 	
@@ -48,6 +48,13 @@ body {
 	height: 100px;
 	background-color: #eee;
 	border-radius: 50%;
+	
+	color: #fff;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: lowercase;
 }
 
 .session2 {
@@ -56,7 +63,7 @@ body {
 }
 
 .session2 > h2 {
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	font-weight: 900;
 }
 
