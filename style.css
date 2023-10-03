@@ -1,93 +1,97 @@
 :root {
-	--font-family: 'Noto Sans JP', sans-serif;
+   --font-family: 'Noto Sans JP', sans-serif;
+
+   --clr-dark: #2b2b2b;
+   --clr-light: #dcdddd;
 }
 
-*, *::before, *::after {
-	box-sizing: border-box;
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
 }
 
 * {
-	margin: 0;
-	padding: 0;
+   margin: 0;
+   padding: 0;
 }
 
 body {
-	font-family: var(--font-family);
-	font-size: 1.031rem;
-	line-height: 1.6;
-	letter-spacing: -0.2px;
-	word-spacing: 2px;
-	font-weight: 300;
-	color: #000;
+   font-family: var(--font-family);
+   font-size: 1.031rem;
+   line-height: 1.6;
+   letter-spacing: -0.2px;
+   word-spacing: 2px;
+   font-weight: 300;
+   color: var(--clr-dark);
+   background-color: #fff;
 }
 
 .container {
-	width: min(42ch, 100% - 2rem);
-	min-height: 100%;
-	margin-inline: auto;
-	
-	padding-block: 4rem;
+   width: min(42ch, 100% - 2rem);
+   min-height: 100%;
+   margin-inline: auto;
+
+   padding-block: 4rem;
 }
 
 .session1 {
-	display: flex;
+   display: flex;
 }
 
 .session1 > a {
-	align-self: flex-end;
-	color: inherit;
-	font-size: 1.6rem;
-	font-weight: 900;
-	text-decoration: none;
-	
+   align-self: flex-end;
+   color: inherit;
+   font-size: 1.6rem;
+   font-weight: 900;
+   text-decoration: none;
+
 }
 
 .img-profile {
-	margin-right: 4rem;
-	width: 100px;
-	height: 100px;
-	background-color: #eee;
-	border-radius: 50%;
-	
-	color: #fff;
-	font-weight: 700;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-transform: lowercase;
+   margin-right: 4rem;
+   width: 100px;
+   height: 100px;
+   background-color: var(--clr-light);
+   border-radius: 50%;
+
+   color: #fff;
+   font-weight: 700;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-transform: lowercase;
 }
 
 .session2 {
-	margin-top: 2rem;
-	padding-left: calc(4rem + 100px);
+   margin-top: 2rem;
+   padding-left: calc(4rem + 100px);
 }
 
 .session2 > h2 {
-	font-size: 1.2rem;
-	font-weight: 900;
+   font-size: 1.2rem;
+   font-weight: 900;
 }
 
 .session2 a {
-	color: inherit;
-	font-weight: 500;
-}
-
-@media (max-width: 26.563em) {
-	.container {
-		padding-block: 2rem;
-	}
+   color: inherit;
+   font-weight: 500;
 }
 
 @media (max-width: 42.188em) {
-	.session1 {
-		flex-direction: column;
-	}
-	
-	.session1 > a {
-		align-self: start;
-	}
-	
-	.session2 {
-		padding-left: 0;
-	}
+   .container {
+      padding-block: 2rem;
+   }
+
+   .session1 {
+      flex-direction: column;
+   }
+
+   .session1 > a {
+      align-self: start;
+   }
+
+   .session2 {
+      padding-left: 0;
+   }
 }
